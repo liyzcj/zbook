@@ -14,11 +14,15 @@
 
 - #### 机器学习对物联网的影响
 
-  - [计算机视觉与物联网，计算机视觉与深度学习](https://strategyofthings.io/iot-computer-vision)
-  - [确定多个传感器对决定的影响需要机器学习](https://internetofthingsagenda.techtarget.com/blog/IoT-Agenda/Smarter-IoT-applications-incorporate-machine-learning) 
-  - [Machine Learning Make IoT Devices Safe](https://www.greycampus.com/blog/big-data/machine-learning-for-a-stronger-iot-security-environment) 
-  - [机器学习的工业物联网应用](https://www.computerweekly.com/news/450431977/How-machine-learning-is-applied-in-industrial-IoT)
-  - 
+  - ~~[计算机视觉与物联网，计算机视觉与深度学习](https://strategyofthings.io/iot-computer-vision)~~
+
+  - [确定多个传感器对决定的影响需要机器学习](https://internetofthingsagenda.techtarget.com/blog/IoT-Agenda/Smarter-IoT-applications-incorporate-machine-learning)  边缘计算的重要性
+
+  - ~~[Machine Learning Make IoT Devices Safe](https://www.greycampus.com/blog/big-data/machine-learning-for-a-stronger-iot-security-environment)~~ 
+
+  - ~~[机器学习的工业物联网应用](https://www.computerweekly.com/news/450431977/How-machine-learning-is-applied-in-industrial-IoT)~~
+
+  - [The roles of cloud computing and fog computing in the Internet of Things revolution](http://www.businessinsider.com/internet-of-things-cloud-computing-2016-10)
 
 - #### 实例[物联网和分布机器学习优化推荐系统](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7562703) 
 
@@ -40,9 +44,10 @@
 
 - #### 软件
 
-  - [可能性与实现](https://www.researchgate.net/post/Can_IoT_applications_benefit_from_deep_learning_architectures_at_their_resource-constrained_devices)
-
+  - ~~[可能性与实现](https://www.researchgate.net/post/Can_IoT_applications_benefit_from_deep_learning_architectures_at_their_resource-constrained_devices)~~
   - 每个终端设备每秒 都产生成千上万的数据——有数据基础
+  - [Bringing deep learning to IoT devices](http://samsungnext.com/whats-next/deep-learning-iot/)
+  - [嵌入式深度学习：走出云端，进入设备](https://diginomica.com/2017/11/21/embedded-deep-learning-out-of-the-cloud-and-onto-devices/)
 
 ## 怎么样在终端设备实现机器学习和深度学习
 
@@ -62,14 +67,18 @@
 
 - Sure you can. I just trained an AlexNet on a server then took the model and implememted it on a respberry pi 2. The classification on the pi take less than 100ms. We also trained a GoogleNet and tried it on the pi, it took 30 seconds per classification. Now we are upgrading to pi 3 with gpu capabilities. __from 【可能性与实现】
 
-  ## 贯穿全文的paper
+## 贯穿全文的paper
 
 - [Enabling Deep Learning on IoT Devices](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8057306)
-
 - [Machine learning for Internet of Things data analysis: A survey]()
-
 - [Analysis of Eight Data Mining Algorithms for Smarter Internet of Things (IoT)](https://ac.els-cdn.com/S187705091632213X/1-s2.0-S187705091632213X-main.pdf?_tid=68251758-67fa-4925-838a-792a7ff8289e&acdnat=1528982865_848f05805f6ba57068c257350ab195da)
-
 - [Edge computing technologies for Internet of Things: a primer](https://reader.elsevier.com/reader/sd/16E059C8CAC000CA66E2EDF55A93AB9BAED514E53FBB2FEF81A2B2DA1836E1BFAD47D8504813DB4857B3A7F16ADA6BCC)
-
 - [Deep Learning for IoT Big Data and Streaming Analytics: A Survey](https://arxiv.org/pdf/1712.04301.pdf) 
+
+## 最终项目-树莓派物体识别 发送到手机
+
+- [How to easily Detect Objects with Deep Learning on Raspberry Pi](https://medium.com/nanonets/how-to-easily-detect-objects-with-deep-learning-on-raspberrypi-225f29635c74)
+- [Accelerating Convolutional Neural Networks on Raspberry Pi](http://cv-tricks.com/artificial-intelligence/deep-learning/accelerating-convolutional-neural-networks-on-raspberry-pi/)
+- [You Only Look Once: Unified, Real-Time Object Detection](https://pjreddie.com/media/files/papers/yolo_1.pdf)
+- [SSD: Single Shot MultiBox Detector](https://arxiv.org/abs/1512.02325)
+- 
