@@ -32,3 +32,7 @@
 
 - #### [PyTorch](https://pytorch.org/)
 
+## Jekyll 实现github 博客
+
+### [jeckll guide](https://jekyllrb.com/docs/quickstart/)
+
