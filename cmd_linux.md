@@ -28,3 +28,16 @@ Some commands used frequently in Linux.
 
 - #### md5sum
 - #### sha256sum
+
+## git
+
+```shell
+# list configuration
+git config --list
+git config --global user.name "alex"
+git config --global user.email liyz0912@gmail.com
+# difference tool
+git config --global merge.tool vimdiff
+
+```
+
