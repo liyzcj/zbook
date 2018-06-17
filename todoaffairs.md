@@ -16,6 +16,10 @@
 
 ## 系统复习基础数学
 
+#### 现行代数展示软件python
+
+
+
 ## 学习gluon+apache
 
 - #### [Machine Learning at the Edge](https://www.ugent.be/ea/idlab/en/research/ai-for-robotics-and-iot/machine-learning-at-the-edge.htm)
@@ -35,4 +39,10 @@
 ## Jekyll 实现github 博客
 
 ### [jeckll guide](https://jekyllrb.com/docs/quickstart/)
+
+## 复习 KRR
+
+##  Code combat
+
+## python 爬虫
 

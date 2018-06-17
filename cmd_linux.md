@@ -24,4 +24,7 @@ Some commands used frequently in Linux.
 | apt list         | List packages      |
 | apt edit-sources | Edits sources list |
 
+## verification
 
+- #### md5sum
+- #### sha256sum
