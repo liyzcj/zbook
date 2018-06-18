@@ -16,7 +16,7 @@
 
 ## 系统复习基础数学
 
-#### 现行代数展示软件python
+#### 线性代数展示软件python
 
 
 
@@ -45,4 +45,10 @@
 ##  Code combat
 
 ## python 爬虫
+
+## 完成zsh + vim 配置
+
+#### [zsh official web]()
+
+#### [zsh workshop](https://www-s.acm.illinois.edu/workshops/zsh/toc.html)
 

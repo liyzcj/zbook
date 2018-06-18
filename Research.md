@@ -81,4 +81,3 @@
 - [Accelerating Convolutional Neural Networks on Raspberry Pi](http://cv-tricks.com/artificial-intelligence/deep-learning/accelerating-convolutional-neural-networks-on-raspberry-pi/)
 - [You Only Look Once: Unified, Real-Time Object Detection](https://pjreddie.com/media/files/papers/yolo_1.pdf)
 - [SSD: Single Shot MultiBox Detector](https://arxiv.org/abs/1512.02325)
-- 

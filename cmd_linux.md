@@ -42,3 +42,6 @@ git config --global merge.tool vimdiff
 git config --global credential.helper store
 ```
 
+## ACL Permission
+[setfacl命令](http://man.linuxde.net/setfacl)
+
