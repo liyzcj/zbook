@@ -38,6 +38,8 @@ git config --global user.name "alex"
 git config --global user.email liyz0912@gmail.com
 # difference tool
 git config --global merge.tool vimdiff
-
 ```
+
+## ACL Permission
+[setfacl命令](http://man.linuxde.net/setfacl)
 
