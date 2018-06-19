@@ -38,7 +38,7 @@
 
 ## Jekyll 实现github 博客
 
-### [jeckll guide](https://jekyllrb.com/docs/quickstart/)
+- ### [jeckll guide](https://jekyllrb.com/docs/quickstart/)
 
 ## 复习 KRR
 
@@ -48,7 +48,7 @@
 
 ## 完成zsh + vim 配置
 
-#### [zsh official web]()
+- #### [zsh official web](http://www.zsh.org/)
 
-#### [zsh workshop](https://www-s.acm.illinois.edu/workshops/zsh/toc.html)
+- #### [zsh workshop](https://www-s.acm.illinois.edu/workshops/zsh/toc.html)
 
