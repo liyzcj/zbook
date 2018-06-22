@@ -52,3 +52,16 @@
 
 - #### [zsh workshop](https://www-s.acm.illinois.edu/workshops/zsh/toc.html)
 
+### vim 训练游戏
+
+- [Vim adventures](https://vim-adventures.com/)
+- [open vim](http://www.openvim.com/)
+
+### 翻译 zsh workshop
+
+## git 学习
+
+- [x] 完成了git的训练 2018.6.22
+
+> Git learning with playing <https://learngitbranching.js.org/>
+
