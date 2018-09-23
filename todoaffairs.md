@@ -35,7 +35,6 @@
 
 - [ ] python 爬虫
 
-
 - [ ] 制作笔记。使用 `reStructuredText` 编写, 使用 `Sphinx` 生成静态文件.
 
 - [ ] 完成vim配置
@@ -44,6 +43,8 @@
 
   - [Vim adventures](https://vim-adventures.com/)
   - [open vim](http://www.openvim.com/)
+
+- [x]  部署翻译的zsh workshop， 完成 2018.09.24
 
 - [x] Code combat 完成容器部署服务器 2018.9.10
 
