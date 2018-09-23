@@ -28,6 +28,13 @@ wslconfig /l
 
 ### verification
 
-- Get-FileHash _filename_ -Algorithm MD5
-- Get-FileHash _filename_ -Algorithm SHA256
+```powershell
+Get-FileHash _filename_ -Algorithm MD5
+Get-FileHash _filename_ -Algorithm SHA256
+```
+
+```powershell
+# 打开 Hyper-V -- powershell
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All
+```
 

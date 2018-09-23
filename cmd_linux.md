@@ -2,7 +2,49 @@
 
 Some commands used frequently in Linux.
 
+## Linux
 
+### 查看占用大小并排序
+
+```shell
+du -sm * | sort -rn ## 正序
+du -sm * | sort -n  ## 倒序
+```
+
+### 关机和重启
+
+关机
+
+```shell
+halt ## 马上关机
+poweroff ## 马上关机
+shutdown -h now ## 马上关机
+shutdown -h 10 ## 十分钟后关机
+shutdown -c ## 取消shutdown计划
+```
+
+重启
+
+```shell
+reboot
+shutdown -r now ## 马上重启
+shutdown -r 10 ## 过十分钟重启
+shutdown -r 21:52 ## 在特定时间重启
+```
+
+### Default Editor
+
+```shell
+update-alternatives --config editor
+```
+
+### ACL Permission
+[setfacl命令](http://man.linuxde.net/setfacl)
+
+### verification
+
+- md5sum
+- sha256sum
 
 ## apt
 
@@ -24,10 +66,6 @@ Some commands used frequently in Linux.
 | apt list         | List packages      |
 | apt edit-sources | Edits sources list |
 
-## verification
-
-- md5sum
-- sha256sum
 
 ## git
 
@@ -40,16 +78,6 @@ git config --global user.email liyz0912@gmail.com
 git config --global merge.tool vimdiff
 # store username and password
 git config --global credential.helper store
-```
-
-## ACL Permission
-[setfacl命令](http://man.linuxde.net/setfacl)
-
-
-## Default Editor
-
-```shell
-update-alternatives --config editor
 ```
 
 ## ruby
@@ -107,3 +135,9 @@ git clone git://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-buil
 | rbenv global 2.5.1   | Set global version             |
 | rbenv local 2.5.1    | Set local version              |
 | rbenv shell 2.5.1    | Set shell version              |
+
+## conda
+
+| Command                  | Function     |
+| ------------------------ | ------------ |
+| conda install python=x.x | 切换默认环境 |
