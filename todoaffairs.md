@@ -41,9 +41,9 @@
 
 - [ ] vim 训练游戏
 
-  - [Vim adventures](https://vim-adventures.com/)
-  - [open vim](http://www.openvim.com/)
-
+  - [ ]  [Vim adventures](https://vim-adventures.com/)
+  - [ ] [open vim](http://www.openvim.com/)
+  - [ ] 手机应用vim master
 - [x]  部署翻译的zsh workshop， 完成 2018.09.24
 
 - [x] Code combat 完成容器部署服务器 2018.9.10
