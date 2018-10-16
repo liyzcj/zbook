@@ -108,7 +108,7 @@ echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.zshrc # zsh
 
 ```shell
 echo 'eval "$(rbenv init -)"' >> ~/.bashrc # bash
-echo 'eval "$(rbenv init -)"' >> ~/.bashrc # zsh
+echo 'eval "$(rbenv init -)"' >> ~/.zashrc # zsh
 ```
 
 #### rbenv-doctor

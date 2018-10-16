@@ -12,6 +12,20 @@ some commands in windows Cmd or Powershell
 | `set`     | About environment variables |
 | `where`   | Like which in Linux         |
 
+### 网络
+
+ipconfig dns:
+
+```powershell
+ipconfig /displaydns  显示dns缓存 
+ipconfig /flushdns    刷新DNS记录 
+ipconfig /renew       重请从DHCP服务器获得IP 
+```
+
+
+
+
+
 ### WSL
 
 ```shell
