@@ -317,3 +317,16 @@ lvrename 旧逻辑卷名 新逻辑卷名
 lvrename /dev/vg_pro1/lv_fileserver2 /dev/vg_pro1/lv_fileserver1
 ```
 
+## sed 命令
+
+### 修改配置文件
+
+```shell
+sed -i "s/\(配置项=\)\S*/\1值/" 配置文件
+
+# "-i" 是直接修改文件
+# "s/1/2"    s是替换，用2 替换1
+# \( \)  使用转义括号包含不变项， 然后在替换值里用 \1 调用
+# "\S*" 用来匹配非空格字符
+```
+
