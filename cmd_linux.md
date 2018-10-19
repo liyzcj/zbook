@@ -339,3 +339,16 @@ sed -i "s#\(配置项=\)\S*#\1替换值#g" file
 # 如果替换值或配置项里有引号，应该在外面加一个引号，引号里面再使用反斜杠转义引号。
 sed -i "s#\(配置项=\)\S*#"\1\"test\""#g" file 
 ```
+
+
+## 命令修改定时任务
+正常修改定时任务
+```shell
+crontab -l # 显示定时任务
+crontab -e # 编辑定时任务
+```
+
+使用命令修改定时任务
+```shell
+crontab -l > conf && echo "定时任务" >> conf && crontab conf && rm -r conf
+```
