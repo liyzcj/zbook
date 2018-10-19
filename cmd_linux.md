@@ -79,7 +79,11 @@ git config --global merge.tool vimdiff
 # store username and password
 git config --global credential.helper store
 ```
-
+### delete commits force
+```shell
+git reset --hard <HEAD>
+git push --force
+```
 ## ruby
 
 ### rbenv
