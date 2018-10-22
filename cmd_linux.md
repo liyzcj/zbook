@@ -339,7 +339,10 @@ sed -i "s#\(配置项=\)\S*#\1替换值#g" file
 # 如果替换值或配置项里有引号，应该在外面加一个引号，引号里面再使用反斜杠转义引号。
 sed -i "s#\(配置项=\)\S*#"\1\"test\""#g" file 
 ```
-
+如果需要递归替换，可以借助`grep`。
+```shell
+sed -i "s/123/456/g" `grep "123" -rl /data/conf/pb-test`  
+```
 
 ## 命令修改定时任务
 正常修改定时任务
@@ -352,3 +355,43 @@ crontab -e # 编辑定时任务
 ```shell
 crontab -l > conf && echo "定时任务" >> conf && crontab conf && rm -r conf
 ```
+
+## 开机启动
+
+Linux 开机启动顺序
+> etc目录有多个rc目录如下：
+> 
+> rc0.d/    rc2.d/    rc4.d/    rc6.d/    rcS.d/
+> 
+> rc1.d/    rc3.d/    rc5.d/    rc.local
+> 
+> 其中 `rcX.d` 目录里是`init.d`目录内服务的链接。
+> 
+> 启动过程是以`rcX.d`最先启动，最后启动的脚本`rc.local`文件.
+
+### rc.local
+
+如果`/etc`目录下没有`rc.local`文件， 可以自己创建并加入如下内容。并添加执行权限。
+```
+#!/bin/sh -e
+#
+# rc.local
+#
+# This script is executed at the end of each multiuser runlevel.
+# Make sure that the script will "exit 0" on success or any other
+# value on error.
+#
+# In order to enable or disable this script just change the execution
+# bits.
+#
+# By default this script does nothing.
+
+exit 0
+```
+添加执行权限：
+```shell
+chmod +x rc.local
+```
+其中开机启动的命令要写在`exit 0`**上面**。
+
+ps: 想设置开机启动jupyter notebook， 使用`su - user -c 'jupyter notebook`总是显示没有`jupyter`命令。 最后不得已，使用`jupyter`的绝对路径才解决。
