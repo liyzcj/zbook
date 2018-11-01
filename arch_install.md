@@ -21,7 +21,36 @@ dhcpcd
 # 若为无线网
 wifi-menu
 ```
+在使用`wifi-menu`之前，要先检查无线网卡驱动。
+```shell
+lspci | grep -i network
+```
+使用`ip link list`列出可用网卡。
+```shell
+ip link set wlp2s0 up
+```
+> 网卡启动失败， rf-kill error~
 
+查看`rfkill`
+
+```shell
+rfkill list all
+```
+
+如果出现`yes`说明有，硬件或者软件阻塞， 硬件阻塞可能是因为电脑自带无线网卡驱动和`arch`的网卡驱动冲突，使用命令删除自带网卡驱动：
+
+```shell
+modprobe -r ideapad_laptop
+```
+
+如果软件阻塞， 则运行以下命令：
+
+```shell
+rfkill unblock all
+```
+
+接下来使用`wifi-menu`链接无线， 确保网卡是连接之前不要使用`ip link set w*** up`
+，我也不知道为什么， 我`up`了就连接连不上。
 ## 更新系统时间
 
 ```shell
