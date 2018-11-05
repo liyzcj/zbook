@@ -139,3 +139,19 @@ P = randperm(n)
 ```matlab
 P = randperm(n,k)
 ```
+
+## 矩阵操作
+
+### 寻找最大值最小值
+
+```matlab
+[a,b] = find(matrix == min(min(matrix)));
+% or
+[a,b] = find(matrix == min(matrix(:)));
+```
+
+### APPEND 数组添加值
+
+```matlab
+array = [array a];
+```
