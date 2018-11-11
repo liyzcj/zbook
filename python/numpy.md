@@ -116,4 +116,32 @@ array([[1, 2],
        [2, 3],
        [3, 4]])
 ```
+## Random
+
+ `numpy.random.choice`(**`a, size=None, replace=True, p=None`**) : 从给定1-D数组随机采样。
+
+```python
+>>> np.random.choice(5, 3)
+array([0, 3, 4])
+>>> #This is equivalent to np.random.randint(0,5,3)
+```
+使用p指定采样概率。
+```python
+>>> np.random.choice(5, 3, p=[0.1, 0, 0.3, 0.6, 0])
+array([3, 3, 0])
+```
+非重复采样：
+```python
+>>> np.random.choice(5, 3, replace=False)
+array([3,1,0])
+>>> #This is equivalent to np.random.permutation(np.arange(5))[:3]
+```
+其他类型数组：
+```python
+>>> aa_milne_arr = ['pooh', 'rabbit', 'piglet', 'Christopher']
+>>> np.random.choice(aa_milne_arr, 5, p=[0.5, 0.1, 0.1, 0.3])
+array(['pooh', 'pooh', 'pooh', 'Christopher', 'piglet'],
+      dtype='|S11')
+```
+
 ---
