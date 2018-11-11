@@ -52,7 +52,7 @@ array([1, 3, 1, 1, 0, 0, 0, 1])
 
 ## Matrix
 
-`numpy.array_split`(**`ary, indices_or_sections, axis=0`**) : 分割矩阵
+`np.array_split`(**`ary, indices_or_sections, axis=0`**) : 分割矩阵
 
 ```python
 >>> x = np.arange(8.0)
@@ -65,7 +65,7 @@ array([1, 3, 1, 1, 0, 0, 0, 1])
 ```
 ---
 
-`numpy.concatenate`(**`(a1, a2, ...), axis=0, out=None`**) : 拼接矩阵
+`np.concatenate`(**`(a1, a2, ...), axis=0, out=None`**) : 拼接矩阵
 
 ```python
 >>> a = np.array([[1, 2], [3, 4]])
@@ -80,3 +80,40 @@ array([[1, 2, 5],
 >>> np.concatenate((a, b), axis=None)
 array([1, 2, 3, 4, 5, 6])
 ```
+---
+`np.hstack`(**`tuple | list`**) : 列方向堆栈，列拼接，相当于`np.stack([a,b], axis=1)`;
+
+```python
+>>> a = np.array((1,2,3))
+>>> b = np.array((2,3,4))
+>>> np.hstack((a,b))
+array([1, 2, 3, 2, 3, 4])
+>>> a = np.array([[1],[2],[3]])
+>>> b = np.array([[2],[3],[4]])
+>>> np.hstack((a,b))
+array([[1, 2],
+       [2, 3],
+       [3, 4]])
+```
+---
+`numpy.stack`(**`arrays, axis=0, out=None`**) : 按指定轴连接数组;
+
+```python
+>>> arrays = [np.random.randn(3, 4) for _ in range(10)]
+>>> np.stack(arrays, axis=0).shape
+(10, 3, 4)
+>>> np.stack(arrays, axis=1).shape
+(3, 10, 4)
+>>> np.stack(arrays, axis=2).shape
+(3, 4, 10)
+>>> a = np.array([1, 2, 3])
+>>> b = np.array([2, 3, 4])
+>>> np.stack((a, b))
+array([[1, 2, 3],
+       [2, 3, 4]])
+>>> np.stack((a, b), axis=-1)
+array([[1, 2],
+       [2, 3],
+       [3, 4]])
+```
+---
