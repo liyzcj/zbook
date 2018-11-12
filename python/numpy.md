@@ -116,6 +116,29 @@ array([[1, 2],
        [2, 3],
        [3, 4]])
 ```
+---
+`np.newaxis` : 空值，等于`None`。 可以将数组变为Nx1矩阵,增加维度
+
+```python
+>>> newaxis is None
+True
+>>> x = np.arange(3)
+>>> x
+array([0, 1, 2])
+>>> x[:, newaxis]
+array([[0],
+[1],
+[2]])
+>>> x[:, newaxis, newaxis]
+array([[[0]],
+[[1]],
+[[2]]])
+>>> x[:, newaxis] * x
+array([[0, 0, 0],
+[0, 1, 2],
+[0, 2, 4]])
+```
+
 ## Random
 
  `numpy.random.choice`(**`a, size=None, replace=True, p=None`**) : 从给定1-D数组随机采样。
