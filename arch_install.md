@@ -361,7 +361,7 @@ systemctl start sddm
 ```shell
 pacman -S kde-applications
 ```
-
+---
 ## 重启
 
 退出系统并`umount`挂载点：
@@ -376,3 +376,26 @@ umount /mnt
 ```shell
 reboot
 ```
+
+---
+
+## 安装NVIDIA驱动
+
+从AUR仓库安装
+
+```shell
+yay -S nvidia
+```
+
+配置`xorg.conf`文件：
+
+```shell
+/etc/X11/xorg.conf
+```
+
+安装图形配置界面`nvidia-settings`:
+
+```shell
+yay -S nvidia-settings
+```
+---
