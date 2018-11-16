@@ -10,7 +10,7 @@
 
 - [ ] 学习斯坦福自然语言理解课程[cs224u](https://web.stanford.edu/class/cs224u/)
 
-- [ ] 系统复习基础数学
+- [ ] 系统复习基础数学 - 2018.11.16 线性代数
 
 - [ ] 线性代数展示软件python
 
@@ -30,20 +30,24 @@
 
   - [PyTorch](https://pytorch.org/)
 
-- [ ] Jekyll 实现github 博客[jeckll guide](https://jekyllrb.com/docs/quickstart/)
+- [x] Jekyll 实现github 博客[jeckll guide](https://jekyllrb.com/docs/quickstart/)
 
 
 - [ ] python 爬虫
 
 - [ ] 制作笔记。使用 `reStructuredText` 编写, 使用 `Sphinx` 生成静态文件.
 
-- [ ] 完成vim配置
+- [x] 完成vim配置 2018.11.5
+
+- [x] 完成tmux.conf 2018.11.3
+
+- [x] arch linux 安装使用 2018.10.25
 
 - [ ] vim 训练游戏
 
   - [ ]  [Vim adventures](https://vim-adventures.com/)
   - [ ] [open vim](http://www.openvim.com/)
-  - [ ] 手机应用vim master
+  - [x] 手机应用vim master 2018.10.15
 - [x]  部署翻译的zsh workshop， 完成 2018.09.24
 
 - [x] Code combat 完成容器部署服务器 2018.9.10
