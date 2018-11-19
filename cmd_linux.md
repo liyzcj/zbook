@@ -395,3 +395,9 @@ chmod +x rc.local
 其中开机启动的命令要写在`exit 0`**上面**。
 
 ps: 想设置开机启动jupyter notebook， 使用`su - user -c 'jupyter notebook`总是显示没有`jupyter`命令。 最后不得已，使用`jupyter`的绝对路径才解决。
+
+## 生成随机密码
+
+```shell
+head -c 50 /dev/urandom | base64 | tr -cd _A-Za-z0-9 | head -c 30
+```
