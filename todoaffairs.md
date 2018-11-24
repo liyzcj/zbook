@@ -62,3 +62,14 @@
 - [x] 翻译 zsh workshop, 完成2018.6.24
 
 - [x] git 学习 [Git learning with playing](https://learngitbranching.js.org/) 完成了git的训练 2018.6.22
+
+- [ ] Stanford cs231n
+    - [ ] assignment 1
+    - [ ] assignment 2
+    - [ ] assignment 3
+
+- [ ] 神经网络底层实现
+    - [ ] 全连接
+    - [ ] cnn
+    - [ ] rnn
+    - [ ] lstm
