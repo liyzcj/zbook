@@ -190,3 +190,61 @@ array(['pooh', 'pooh', 'pooh', 'Christopher', 'piglet'],
 ```
 
 ---
+
+`numpy.random.RandomState`(**`seed=None`**): numpy 的随机容器， 可以根据seed生成伪随机数。有所有的随机numpy 随机方法。
+
+---
+
+`numpy.random.rand`(**`d0,d1,...,dn`**): 生成给定`shape`的 **[0,1)**之间的随机数。
+
+```python
+>>> np.random.rand(3,2)
+array([[ 0.14022471,  0.96360618],  #random
+       [ 0.37601032,  0.25528411],  #random
+       [ 0.49313049,  0.94909878]]) #random
+```
+
+---
+
+`numpy.random.randn`(**`d0,d1,...,dn`**): 生成给定`shape`的 **[0,1)**之间的随机数。服从正态分布。
+
+```python
+>>> 2.5 * np.random.randn(2, 4) + 3
+array([[-4.49401501,  4.00950034, -1.81814867,  7.29718677],  #random
+       [ 0.39924804,  4.68456316,  4.99394529,  4.84057254]]) #random
+```
+
+---
+`numpy.random.randint`(**`low, high=None, size=None, dtype='l'`**): 随机 生成**[low, high)** 之间的整数。
+
+```python
+>>> np.random.randint(2, size=10)
+array([1, 0, 0, 0, 1, 1, 0, 0, 1, 0])
+>>> np.random.randint(1, size=10)
+array([0, 0, 0, 0, 0, 0, 0, 0, 0, 0])
+```
+```python
+>>> np.random.randint(5, size=(2, 4))
+array([[4, 0, 2, 1],
+       [3, 2, 2, 0]])
+```
+
+---
+`numpy.random.random_sample`(**`size=None`**)
+`numpy.random.sample`(**`size=None`**)
+`numpy.random.random`(**`size=None`**)
+`numpy.random.ranf`(**`size=None`**)
+
+**[0.0, 1.0)**之间平均采样的float值
+
+---
+
+`numpy.random.uniform`(**`low=0.0, high=1.0, size=None`**): **[low, high)** 之间的随机平均采样。
+
+```python
+>>> np.all(s >= -1)
+True
+>>> np.all(s < 0)
+True
+```
+---
