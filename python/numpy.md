@@ -138,6 +138,28 @@ array([[0, 0, 0],
 [0, 1, 2],
 [0, 2, 4]])
 ```
+---
+
+`numpy.moveaxis`(**`a, source, destination`**): 移动一条轴, New in version 1.11.0.
+
+
+```python
+>>> x = np.zeros((3, 4, 5))
+>>> np.moveaxis(x, 0, -1).shape
+(4, 5, 3)
+>>> np.moveaxis(x, -1, 0).shape
+(5, 3, 4)
+```
+```python
+>>> np.transpose(x).shape
+(5, 4, 3)
+>>> np.swapaxes(x, 0, -1).shape
+(5, 4, 3)
+>>> np.moveaxis(x, [0, 1], [-1, -2]).shape
+(5, 4, 3)
+>>> np.moveaxis(x, [0, 1, 2], [-1, -2, -3]).shape
+(5, 4, 3)
+```
 
 ## Random
 
