@@ -35,3 +35,20 @@ offset  : 投影到哪个值的平面
 cmap    : 颜色地图
 """
 ```
+
+## 2D plot
+
+不显示坐标轴
+
+```python
+frame = plt.gca()
+# y 轴不可见
+frame.axes.get_yaxis().set_visible(False)
+# x 轴不可见
+frame.axes.get_xaxis().set_visible(False)
+```
+OR
+```python
+plt.axis('off')
+```
+---
