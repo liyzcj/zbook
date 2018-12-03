@@ -73,3 +73,4 @@
     - [ ] cnn
     - [ ] rnn
     - [ ] lstm
+- [ ] shuhuai白板推导
