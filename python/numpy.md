@@ -81,7 +81,7 @@ array([[1, 2, 5],
 array([1, 2, 3, 4, 5, 6])
 ```
 ---
-`np.hstack`(**`tuple | list`**) : 列方向堆栈，列拼接，相当于`np.stack([a,b], axis=1)`;
+`np.hstack`(**`tuple | list`**) : 列方向堆栈，列拼接，相当于`np.concatenate([a,b], axis=1)`;
 
 ```python
 >>> a = np.array((1,2,3))
@@ -96,7 +96,7 @@ array([[1, 2],
        [3, 4]])
 ```
 ---
-`numpy.stack`(**`arrays, axis=0, out=None`**) : 按指定轴连接数组;
+`numpy.stack`(**`arrays, axis=0, out=None`**) : 按指定的新轴连接数组;
 
 ```python
 >>> arrays = [np.random.randn(3, 4) for _ in range(10)]
