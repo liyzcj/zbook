@@ -6,7 +6,7 @@
 
 - [ ] 通过一本linux书籍系统学习linux
 
-- [ ] corsera 学习斯坦福机器学习课程[machine learning](https://www.coursera.org/learn/machine-learning)
+- [x] corsera 学习斯坦福机器学习课程[machine learning](https://www.coursera.org/learn/machine-learning) 2018.12.16 finish
 
 - [ ] 学习斯坦福自然语言理解课程[cs224u](https://web.stanford.edu/class/cs224u/)
 
@@ -76,3 +76,4 @@
 - [ ] shuhuai白板推导
 
 - [ ] 台大李宏毅教授教程
+- [ ] cs229 Machine Learning
