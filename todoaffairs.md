@@ -43,10 +43,8 @@
 
 - [x] arch linux 安装使用 2018.10.25
 
-- [ ] vim 训练游戏
-
-  - [ ]  [Vim adventures](https://vim-adventures.com/)
-  - [ ] [open vim](http://www.openvim.com/)
+- [x] vim 训练游戏
+  - [x] [open vim](http://www.openvim.com/) 2018.12.16
   - [x] 手机应用vim master 2018.10.15
 - [x]  部署翻译的zsh workshop， 完成 2018.09.24
 
