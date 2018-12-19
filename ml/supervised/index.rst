@@ -1,5 +1,5 @@
 Supervised Learning
-===============
+===========================
 
 .. toctree::
     :glob:
