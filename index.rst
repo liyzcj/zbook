@@ -3,14 +3,54 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to NoteBook's documentation!
+NoteBook!
 ====================================
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+    
+    todolist
 
+.. toctree::
+    :maxdepth: 3
+    :caption: Operations:
+    :glob:
 
+    operations/*/index
+
+.. toctree::
+    :maxdepth: 3
+    :caption: Program
+    :glob:
+
+    program/*/index
+
+.. toctree::
+    :maxdepth: 3
+    :caption: Machine Learning
+    :glob:
+
+    ml/*/index
+
+.. toctree::
+    :maxdepth: 3
+    :caption: Mathmatica
+    :glob:
+
+    math/*/index
+
+.. toctree::
+    :maxdepth: 3
+    :caption: Utils
+    :glob:
+
+    utils/*/index
+
+.. toctree::
+    :maxdepth: 3
+    :caption: Work
+    :glob:
+
+    work/*/index
 
 Indices and tables
 ==================

@@ -1,0 +1,7 @@
+Supervised Learning
+===============
+
+.. toctree::
+    :glob:
+
+    *

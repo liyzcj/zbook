@@ -1,0 +1,7 @@
+Data Mining
+============
+
+.. toctree::
+    :glob:
+
+    *
