@@ -14,6 +14,8 @@
 
 - [x] 线性代数展示软件python 2018.12.15
 
+- [x] 完成梯度下降优化器可视化 2018.12.24
+
 - [ ] 学习gluon+apache
 
   - [Machine Learning at the Edge](https://www.ugent.be/ea/idlab/en/research/ai-for-robotics-and-iot/machine-learning-at-the-edge.htm)
