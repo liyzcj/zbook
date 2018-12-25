@@ -76,4 +76,7 @@
 - [ ] shuhuai白板推导
 
 - [ ] 台大李宏毅教授教程
+  
 - [ ] cs229 Machine Learning
+
+- [ ] coursera Deep learning 课程。
