@@ -59,7 +59,7 @@
   - [zsh official web](http://www.zsh.org/)
   - [zsh workshop](https://www-s.acm.illinois.edu/workshops/zsh/toc.html)
 
-- [x] 翻译 zsh workshop, 完成2018.6.24
+- [x] 翻译 zsh works op, 完成2018.6.24
 
 - [x] git 学习 [Git learning with playing](https://learngitbranching.js.org/) 完成了git的训练 2018.6.22
 
@@ -80,3 +80,4 @@
 - [ ] cs229 Machine Learning
 
 - [ ] coursera Deep learning 课程。
+    - [x]  课程1 2018.12.25
