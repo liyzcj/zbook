@@ -79,5 +79,9 @@
   
 - [ ] cs229 Machine Learning
 
-- [ ] coursera Deep learning 课程。
+- [x] coursera Deep learning 课程。
     - [x]  课程1 2018.12.25
+    - [x]  课程2 2018.12.26
+    - [x]  课程3 2018.12.27
+    - [x]  课程4 2019.1.1
+    - [x]  课程5 2019.1.2
