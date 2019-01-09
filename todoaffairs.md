@@ -22,7 +22,7 @@
   - [gluon](https://zh.gluon.ai/index.html)
   - [apache](https://github.com/apache/incubator-mxnet)
 
-- [ ] 深度学习平台
+- [x] 深度学习平台 2019.01.09
 
   - [Keras](https://keras.io/zh/)
 
@@ -73,6 +73,7 @@
     - [ ] cnn
     - [ ] rnn
     - [ ] lstm
+    
 - [ ] shuhuai白板推导
 
 - [ ] 台大李宏毅教授教程
