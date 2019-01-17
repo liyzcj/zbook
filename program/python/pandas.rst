@@ -7,7 +7,7 @@ DataFrame 操作
 数据替换
 '''''''''''''''''''''''''''
 
-1. 对整个|df|的值进行替换, ``inplace`` 代表是否改变源数据::
+1. 对整个 DataFrame 的值进行替换, ``inplace`` 代表是否改变源数据::
 
     df.replace(to_replace, value, inplace = True)
 
