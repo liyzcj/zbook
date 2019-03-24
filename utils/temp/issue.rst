@@ -19,3 +19,16 @@ TEMP issues
 原因可能是 read the docs 上的sphinx 版本较低?
 
 解决办法: 在sphinx 配置文件里添加 'sphinx.ext.mathjax',
+
+3. windows python virtualenv 下 spyder 打不开
+
+在 virtualenv 中使用 ``pip install spyder`` 后运行 ``spyder3.exe`` 没有反应.
+
+在python 终端中运行如下代码::
+
+    from spyder.app import start
+    start.main()
+
+报错, ModuleNotFoundError: No module named 'PyQt5.QtWebKitWidgets'
+
+解决办法: 运行 ``pip install PyQtWebEngine`` 解决. 运行 ``spyder3.exe`` 正常.
