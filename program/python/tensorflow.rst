@@ -1,6 +1,10 @@
 TensorFlow
 ==========================
 
+.. contents::
+    :local:
+    :backlinks: top
+
 TensorFlow 优化
 --------------------------
 
@@ -156,3 +160,60 @@ Summaries
 .. important:: ``proj_config`` 会以文件形式写入 ``FileWriter`` 的相同目录下, 所以单词表的路径应该是 ``FileWriter`` 的相对路径.
 
 将以上信息配置好以后, 就可以在 ``tensorboard`` 的 ``PROJECTOR`` 标签内查看映射.
+
+保存与恢复
+-----------------------
+
+变量
+''''''''''''''''''''''
+
+.. sidebar:: 保存间隔
+
+    可以选择每一个 ``step`` 保存一次变量, 一般是每一个 ``epoch`` 保存一次变量.
+
+变量的保存与恢复使用 ``Saver`` 类.
+
+首先实例化一个 ``Saver`` 类::
+
+  saver = tf.save.Saver()
+
+保存变量
+""""""""""""""""""""""""""
+
+保存通过 ``saver.save()``::
+
+  path = os.path.join(save_path, 'after-epoch')
+  saver.save(sess, path, global_step=i+1)
+
+:path:        保存变量的文件名称
+:global_step: 文件名后缀
+
+.. hint:: 可以使用当前的 ``epoch`` 作为文件的后缀, 如上.
+
+恢复变量
+""""""""""""""""""""""""""
+
+恢复变量通过::
+
+  saver.restore(sess, restore_path)
+
+:restore_path: 保存点的文件
+
+如果 ``restore_path`` 是目录, 则需要首先使用 ``tf.train.latest_checkpoint(restore_path)`` 获取最新的检查点文件.
+
+可以在开始训练前恢复上一次训练的变量, 继续训练.
+
+.. code:: python
+
+  # Reload weights if exits
+  if os.path.exists(restore_path):
+    print("Restoring parameters from {}".format(restore_path))
+    if os.path.isdir(restore_path):
+      restore_path = tf.train.latest_checkpoint(restore_path)
+    # Begin at epoch
+    bae = int(restore_path.split('-')[-1])
+    saver.restore(sess, restore_path)
+
+:bae:     Begin of epoch, 开始的 ``epoch``
+
+.. attention:: 使用这段代码时, 循环 ``epoch`` 应该使用 ``range(bae, bae+num_epoch)``.

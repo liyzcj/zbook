@@ -2,8 +2,8 @@ reStructuredText
 =====================
 
 .. contents::
-
-.. section-numbering::
+    :local:
+    :backlinks: top
 
 reStructuredText 以行为间隔, 每隔一行为一个段落。
 
