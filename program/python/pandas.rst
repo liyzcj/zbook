@@ -1,4 +1,4 @@
-PANDAS
+Pandas
 ==========================
 
 DataFrame 操作
