@@ -75,6 +75,7 @@ TensorBoard
 .. attention:: ``FileWriter`` 需要定义在初始化 ``Session()`` 以后.
 
 .. _写入文件:
+
 然后在每次运行计算图并获得 ``summary`` 的结果时, 将结果写入到文件::
 
   # summ 是运行 summary op 得到的结果
@@ -150,7 +151,7 @@ Summaries
 
   embed.metadata_path = "vocab.tsv"
 
-然后指定 ``writer`` 与 ``proj_config``, 即 ``summary`` 的 ``FileWriter``.
+然后指定 ``writer`` 与 ``proj_config``, 即 ``summary`` 的 ``FileWriter``, 写入文件_.
 
 .. important:: ``proj_config`` 会以文件形式写入 ``FileWriter`` 的相同目录下, 所以单词表的路径应该是 ``FileWriter`` 的相对路径.
 
