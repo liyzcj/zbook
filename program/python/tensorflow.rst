@@ -53,14 +53,17 @@ Logging日志
   # 只记录ERROR日志
   tf.logging.set_verbosity(tf.logging.ERROR)
 
+.. sidebar:: 日志阈值
+
+  每一级代表阈值, 例如 ``ERROR`` 包括 ``ERROR`` 与 ``FATAL``
 
 日志类别:
 
 - DEBUG
-- ERROR
-- FATAL
 - INFO
 - WARNING
+- ERROR
+- FATAL
 
 TimeLine 查看运行时间线
 ''''''''''''''''''''''''''
