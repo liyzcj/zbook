@@ -23,6 +23,21 @@ TensorFlow 优化
   ## tf.Session()
   tf.Session(config = config)
 
+日志级别
+'''''''''''''''''''''''''''
+
+日志级别::
+
+  0 = all messages are logged (default behavior)
+  1 = INFO messages are not printed
+  2 = INFO and WARNING messages are not printed
+  3 = INFO, WARNING, and ERROR messages are not printed
+
+可以通过环境变量调整 ``TensorFlow`` 日志级别::
+
+  import os
+  os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2' 
+
 TimeLine 查看运行时间线
 ''''''''''''''''''''''''''
 
