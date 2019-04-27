@@ -26,6 +26,11 @@ TensorFlow 优化
 日志级别
 '''''''''''''''''''''''''''
 
+运行日志
+"""""""""""""""""""""""""""
+
+运行日志是在初始化 ``Session`` 时的日志.
+
 日志级别::
 
   0 = all messages are logged (default behavior)
@@ -37,6 +42,25 @@ TensorFlow 优化
 
   import os
   os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2' 
+
+Logging日志
+"""""""""""""""""""""""""""
+
+``Logging`` 日志是在构建计算图时产生的日志:
+
+通过 ``set_verbosity()`` 来确定记录什么类型的日志::
+
+  # 只记录ERROR日志
+  tf.logging.set_verbosity(tf.logging.ERROR)
+
+
+日志类别:
+
+- DEBUG
+- ERROR
+- FATAL
+- INFO
+- WARNING
 
 TimeLine 查看运行时间线
 ''''''''''''''''''''''''''
