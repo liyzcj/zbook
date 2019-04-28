@@ -2,11 +2,21 @@ Python
 ==========================
 
 .. contents::
-    :local:
-    :backlinks: top
+  :local:
+  :backlinks: top
 
 Utils
 --------------------------
+
+Assertion
+''''''''''''''''''''''''''
+
+断言可以用来判断, 确保程序运行正确.
+
+断言二维列表::
+
+  assert isinstance(input_data[0], list)
+
 
 pickle
 ''''''''''''''''''''''''''
