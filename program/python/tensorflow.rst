@@ -217,7 +217,7 @@ Summaries
 
 首先实例化一个 ``Saver`` 类::
 
-  saver = tf.save.Saver()
+  saver = tf.train.Saver()
 
 保存变量
 """"""""""""""""""""""""""
