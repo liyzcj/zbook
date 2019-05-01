@@ -1,4 +1,4 @@
-Linux
+常用命令 
 ================
 
 linux commands.
