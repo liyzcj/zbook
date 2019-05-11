@@ -311,9 +311,13 @@ Python 的类有一些内置的特殊成员与方法, 也叫 **魔术方法** .
 """""""
 
 参考
+
 `Python 魔术方法指南`_
+
 `Python 官方文档`_
+
 `一篇文章搞懂Python中的面向对象编程`_
+
 `Python 面向对象(进阶篇)`_
 
 .. _Python 魔术方法指南: https://pycoders-weekly-chinese.readthedocs.io/en/latest/issue6/a-guide-to-pythons-magic-methods.html#python
@@ -455,6 +459,62 @@ file.close()
 file.mode
   返回打开文件的标记.
 
+常用模块
+---------
+
+shutil 模块
+''''''''''''
+
+复制文件到不同位置::
+
+  from shutil import copyfile
+  copyfile(src, dst)
+
+os 模块
+''''''''
+.. code-block:: python
+
+  import os
+
+创建文件夹::
+
+  os.mkdir(path, mode=0777)
+
+如果需要创建的文件夹的父文件夹不存在, 则需要递归创建::
+
+  os.makedirs(path, mode=0777)
+
+连接目录::
+
+  os.path.join(path, *args)
+
+判断文件或目录是否存在::
+
+  os.path.exists(path)
+
+调用系统指令::
+
+  os.system(command) # 不返回信息
+  result = os.popen(command) # 返回输出信息
+  print(result.read())
+
+time 模块
+''''''''''
+
+获取当前时间, 单位为**秒**::
+
+  from time import time
+  current = time()
+
+sys 模块
+''''''''''
+
+增加目录到 ``PATH`` 环境变量::
+
+  import sys
+  sys.path.append(path)
+
+
 Utils
 --------------------------
 
@@ -586,6 +646,13 @@ Python2 与 Python3 的不同
 交互式CLI
 '''''''''''''''''''''''
 
-交互式CLI 里, 像 ``shell`` 的上次命令是 ``!!`` 一样, ``_`` 代表上次的输出. 
-
+历史结果
+  交互式CLI 里, 像 ``shell`` 的上次命令是 ``!!`` 一样, ``_`` 代表上次的输出. 
 更进一步的 ``__``代表倒数第二次的输出, ``___`` 代表倒数第三次的输出.
+
+Ipython 交互
+"""""""""""""
+
+运行文件::
+
+  %run file

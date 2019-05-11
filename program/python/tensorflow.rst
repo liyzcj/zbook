@@ -5,6 +5,19 @@ TensorFlow
     :local:
     :backlinks: top
 
+构建计算图
+---------
+
+条件指令
+''''''''''
+::
+
+  tf.cond(cond, f1,f2)
+
+tensorflow 条件语句, 如果条件满足返回 f1, 如果不满足返回 f2. 
+注意 f1,f2 是函数, 如果想要返回常量或着变量, 可以使用技巧 ``lambda: vars``, 这个函数直接返回变量 ``vars``.
+
+
 TensorFlow 优化
 --------------------------
 
@@ -217,7 +230,8 @@ Summaries
 
 首先实例化一个 ``Saver`` 类::
 
-  saver = tf.train.Saver()
+  saver = tf.train.Saver(vars)
+  # vars 为要保存的变量, 默认保存所有全局变量
 
 保存变量
 """"""""""""""""""""""""""
