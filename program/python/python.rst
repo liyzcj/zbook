@@ -20,7 +20,7 @@ Python 中有两种类, **经典类** 与 **新式类**. 新式类比经典类�
 
 将属性或方法封装在类或着对象中, 通过类或对象访问.
 
-.. image:: https://s2.ax1x.com/2019/05/10/EW3DGq.png
+.. image:: https://s2.ax1x.com/2019/05/10/EW3DGq.md.png
   :scale: 50 %
   :alt: 类与对象
 
