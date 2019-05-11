@@ -69,3 +69,12 @@ C++的多态有两种:
 .. code-block:: c++
 
   virtual void function() = 0;
+
+Reference
+
+`C++ 三大特性之多态`_
+
+`C++ 多态`_
+
+.. _C++ 多态: https://www.runoob.com/cplusplus/cpp-polymorphism.html
+.. _C++ 三大特性之多态: http://huqunxing.site/2016/09/08/C++%20%E4%B8%89%E5%A4%A7%E7%89%B9%E6%80%A7%E4%B9%8B%E5%A4%9A%E6%80%81/#%E4%BB%A4%E4%BA%BA%E8%BF%B7%E6%83%91%E7%9A%84%E9%9A%90%E8%97%8F%E8%A7%84%E5%88%99
