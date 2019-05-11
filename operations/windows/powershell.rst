@@ -16,11 +16,14 @@ Powershell 默认的配置文件路径保存在 `PROFILE` 变量中::
 Utils
 ---------
 
-.. sidebar:: 永久添加
+.. sidebar:: 注意
 
-  如果想要添加的环境变量永久生效, 可以将语句写到 $PROFILE 配置文件中.
-增加路径到 ``PATH`` 变量中::
-  
+   不要忘记 ``;``.
+
+添加目录到环境变量 ``PATH`` 中::
+
   $Env:path=$Env:Path+";new_path"
 
-.. attention:: 注意不要忘记 ``;``.
+.. tip:: 
+  
+  如果想要添加的环境变量永久生效, 可以将语句写到 $PROFILE 配置文件中.增加路径到 ``PATH`` 变量中::

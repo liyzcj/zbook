@@ -15,7 +15,9 @@ TensorFlow
   tf.cond(cond, f1,f2)
 
 tensorflow 条件语句, 如果条件满足返回 f1, 如果不满足返回 f2. 
-注意 f1,f2 是函数, 如果想要返回常量或着变量, 可以使用技巧 ``lambda: vars``, 这个函数直接返回变量 ``vars``.
+注意 f1,f2 是函数, 如果想要返回常量或着变量, 可以使用技巧 ``lambda: vars``, 这个函数直接返回变量 ``vars``::
+
+  tf.cond(cond, lambda: vars1, lambda: vars2)
 
 
 TensorFlow 优化
