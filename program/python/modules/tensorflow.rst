@@ -235,6 +235,8 @@ Summaries
   saver = tf.train.Saver(vars)
   # vars 为要保存的变量, 默认保存所有全局变量
 
+:max_to_keep: 最大保存个数, 默认为 5
+
 保存变量
 """"""""""""""""""""""""""
 
