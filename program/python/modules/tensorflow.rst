@@ -8,6 +8,94 @@ TensorFlow
 构建计算图
 ---------
 
+OPS
+''''''''''
+
+切片
+""""""""""
+
+Tensorflow 提供了方法对 Tensor 进行切片::
+
+  tf.strided_slice(
+    input_,
+    begin,
+    end,
+    strides=None,
+    begin_mask=0,
+    end_mask=0,
+    ellipsis_mask=0,
+    new_axis_mask=0,
+    shrink_axis_mask=0,
+    var=None,
+    name=None
+  )
+
+``start`` 与 ``end`` 的长度应与 Tensor 的维度相同, 代表某个维度从多少到多少.
+
+扩展维度
+"""""""""""
+
+扩展额外的维度::
+
+  tf.expand_dims(tensor, axis, name=None)
+
+在 ``tensor`` 的第 ``axis`` 处增加一个维度.
+
+reshape
+""""""""""
+
+修改 ``tensor`` 的 ``shape`` ::
+
+  tf.reshape(tensor, shape, name=None)
+
+
+乘法
+""""""""""
+
+与 Numpy 相同, tensorflow 的乘法也有普通乘法与矩阵乘法.
+
+- 普通乘法
+
+::
+
+  tf.multiply(a, b, name=None)
+
+普通乘法与 Numpy 的普通乘法一样, ``element-wise`` 乘法, 也有广播机制, 只不过是对 Tensor 操作.
+
+::
+ 
+  >>> a = tf.constant(np.arange(12), dtype=np.int32, shape=[3,4])
+  >>> b = tf.constant(np.arange(4), dtype=np.int32, shape=[1,4])
+  >>> a * b
+  <tf.Tensor 'mul:0' shape=(3, 4) dtype=int32>
+
+.. tip:: 对 Tensor 操作会自动重载 ``*`` 乘法操作符.
+
+
+- 矩阵乘法
+
+::
+
+  tf.matmul(a, b, name=None)
+
+矩阵乘法也与 ``numpy.dot()`` 相同. 有二维矩阵乘法与三维矩阵乘法.
+
+**二维矩阵** 乘法就是正常的矩阵乘法 ``[m, n] * [n, p] = [m, p]`` .
+
+**三维矩阵** 乘法要求第 0 维大小相同, 相当于在第 0 维进行 ``metric-wise`` 批量矩阵相乘.
+
+::
+
+  >>> a = tf.constant(np.ones([2,3,4]))
+  >>> b = tf.constant(np.ones([2,4,5]))
+  >>> a @ b
+  <tf.Tensor 'matmul:0' shape=(2, 3, 5) dtype=float64>
+
+.. tip:: Python 3.5 版本加入 ``@`` 矩阵乘法操作符, Tensorflow也已实现重载.
+
+
+
+
 条件指令
 ''''''''''
 ::
